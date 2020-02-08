@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export function Card1(props) {
 	return (
 		<div
-			className="card-deck d-flex justify-content-around"
+			className="card-deck d-flex justify-content-around "
 			style={{ width: "400px" }}>
 			<div className="card">
 				<img
@@ -15,7 +15,7 @@ export function Card1(props) {
 				<div className="card-body">
 					<h5 className="card-title">{props.title}</h5>
 					<p className="card-text">{props.text}</p>
-					<a href={props.imgUrl} className={props.btnclr}>
+					<a href={props.cardlink} className={props.btnclr}>
 						Listen Now!
 					</a>
 				</div>
@@ -25,7 +25,7 @@ export function Card1(props) {
 }
 
 Card1.propTypes = {
-	imgUrl: PropTypes.string,
+	cardlink: PropTypes.string,
 	title: PropTypes.string,
 	img: PropTypes.string,
 	text: PropTypes.string,
